@@ -67,14 +67,6 @@ function rajouteEnleve(e) {
   allInputs.forEach((input) => {
     input.addEventListener("input", majColor);
   });
-
-  function majColor(e) {
-    let indexEnCours = e.target.getAttribute("data-index");
-    e.target.value = e.target.value.toUpperCase();
-    valCouleur[indexEnCours - 1] = e.target.value.toUpperCase();
-    e.target.style.background = valCouleur[indexEnCours - 1];
-    font.style.background = `linear-gradient(${inclinaison}deg, ${valCouleur})`;
-  }
 }
 
 inputsCouleur.forEach((input) => {
