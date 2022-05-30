@@ -86,7 +86,7 @@ function majColor(e) {
 btns[2].addEventListener("click", () => {
   const inputs = document.querySelectorAll(".inp__couleur");
   for (let i = 0; i < valCouleur.length; i++) {
-    valCouleur[i] = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    valCouleur[i] = `#${Math.floor(Math.random() * 26777215).toString(16)}`;
     inputs[i].value = valCouleur[i].toUpperCase();
     inputs[i].style.background = valCouleur[i];
     font.style.background = `linear-gradient(${inclinaison}deg, ${valCouleur})`;
